@@ -7,7 +7,7 @@ INSERT INTO OrderItems (OrderID, ProductID, Count)
     VALUE (1, 1, 10);
 
 START TRANSACTION; 
-UPDATE Products SET WarehouseAmount = WarehouseAmount - 10 WHERE EmployeeID = '1';
+UPDATE Products SET WarehouseAmount = WarehouseAmount - 10 WHERE ID = '1';
 
 COMMIT;
 
